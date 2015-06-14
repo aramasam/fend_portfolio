@@ -19,11 +19,11 @@
 
     <!-- Document Header: Logo, Name and Description -->
     <div class="row header-row">
-        <div class="col-md-6">
+        <div class="col-md-3">
             <img class="img-responsive udacity-logo" src="images/udacity_logo.jpeg" alt="Udacity Logo">
         </div>
-        <div class="col-md-6 text-right text-uppercase">
-            <h1 class="title-super text-thin">Jane Doette</h1>
+        <div class="col-md-9 text-right text-uppercase">
+            <h1 class="title-super text-thin">Ananth Ramasamy</h1>
             <h3 class="title-summary">Front-end Ninja</h3>
         </div>
     </div>
@@ -91,7 +91,7 @@
         <!-- Click to see morec info -->
         <div class="col-md-4">
             <img class="img-responsive websiteoptim-image"
-                 style="cursor:pointer" data-toggle="modal" data-target="#project1"
+                 style="cursor:pointer" data-toggle="modal" data-target="#project4"
                  src="images/websiteoptim.png"
                  alt="A picture saying web optimization">
             <h3 class="text-uppercase project-caption">Website Optimization</h3>
@@ -99,9 +99,33 @@
                data-toggle="modal" data-target="#project4">Web Optimization Details</a>
         </div>
 
+        <!-- Project 5, Neighborhood map  -->
+        <!-- Click to see morec info -->
+        <div class="col-md-4">
+            <img class="img-responsive neighborhood-image"
+                 style="cursor:pointer" data-toggle="modal" data-target="#project5"
+                 src="images/neighborhood2.gif"
+                 alt="A picture of a neighborhood">
+            <h3 class="text-uppercase project-caption">Neighborhood Map</h3>
+            <a class="link-property" style="cursor:pointer"
+               data-toggle="modal" data-target="#project5">Neighborhood Map</a>
+        </div>
+
+        <!-- Project 6, Test Driven Development  -->
+        <!-- Click to see morec info -->
+        <div class="col-md-4">
+            <img class="img-responsive tdd-image"
+                 style="cursor:pointer" data-toggle="modal" data-target="#project6"
+                 src="images/tdd.png"
+                 alt="A picture showing Test Driven Development">
+            <h3 class="text-uppercase project-caption">Test Driven Development</h3>
+            <a class="link-property" style="cursor:pointer"
+               data-toggle="modal" data-target="#project6">Test Driven Development</a>
+        </div>
     </div> <!-- row end -->
 
-    <!-- Modal for Project 1 (portfolio) -->
+    <!-- MODAL FOR ALL PROJECTS -->
+
     <div class="modal fade" id="project1" tabindex="-1" role="dialog"
         aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -181,6 +205,51 @@
                          alt="A picture saying web optimization">
                     <h4>Description</h4>
                     I optimized a provided website with a number of optimization- and performance-related issues so that it achieved a target PageSpeed score and runs at 60 frames per second.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Project 5 (Neighborhood Map) -->
+    <div class="modal fade" id="project5" tabindex="-1" role="dialog"
+        aria-labelledby="myModalLabel4" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="myModalLabel4">Neighborhood Map</h3>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive neighborhood-image-lg"
+                         src="images/neighborhood2.gif"
+                         alt="A picture showing a neighborhood">
+                    <h4>Description</h4>
+                    I developed a single-page application featuring a map of my neighborhood. I then added additional functionality to this application, including: map markers to identify popular locations or places you’d like to visit, a search function to easily discover these locations, and a listview to support simple browsing of all locations. I then researched and implement third-party APIs that provide additional information about each of these locations (such as StreetView images, Wikipedia articles, Yelp reviews, etc).
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Project 6 (Test Driven Development) -->
+    <div class="modal fade" id="project6" tabindex="-1" role="dialog"
+        aria-labelledby="myModalLabel5" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="myModalLabel5">Test Driven Development</h3>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive tdd-image-lg"
+                         src="images/tdd.png"
+                         alt="A picture Test Driven Development">
+                    <h4>Description</h4>
+                    In this project, I learnt about testing with Javascript. Testing is an important part of the development process and many organizations practice a standard known as "test-driven development" or TDD. This is when developers write tests first, before they ever start developing their application.
+                    Whether you work in an organization that writes tests extensively to inform product development or one that uses tests to encourage iteration, testing has become an essential skill in modern web development!
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

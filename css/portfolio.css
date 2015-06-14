@@ -54,7 +54,9 @@ hr {
 .portfolio-image,
 .resume-image,
 .frogger-image,
-.websiteoptim-image
+.websiteoptim-image,
+.neighborhood-image,
+.tdd-image
 {
 	width: 350px ;
 	height: 210px ;
@@ -63,7 +65,9 @@ hr {
 .portfolio-image-lg,
 .resume-image-lg,
 .frogger-image-lg,
-.websiteoptim-image-lg
+.websiteoptim-image-lg,
+.neighborhood-image-lg,
+.tdd-image-lg
 {
 	width: 550px ;
 	height: 300px ;
