@@ -1,0 +1,86 @@
+/** {
+	border: 1px dotted navy ;
+}
+*/
+
+body {
+	font-family: 'Lato', sans-serif;
+	color: #747704;
+	font-weight: 300;
+}
+.title-super {
+	font-size: 60px;
+}
+.title-summary {
+	margin-top: 10px;
+}
+.udacity-logo {
+	width: 140px ;
+	height: 140px ;
+	margin-top: 10px;
+	margin-bottom: 5px ;
+}
+.header-row {
+	margin-top: 20px;
+}
+.text-muted {
+	color: #bcbbbb;
+}
+.text-thin {
+	font-weight: 100 ;
+}
+.project-caption {
+	font-size: 36px;
+	font-weight: 300;
+}
+.project-header {
+	font-size: 36px;
+	letter-spacing: 2px ;
+	font-weight: 300;
+}
+hr {
+    border: 0;
+	padding: 0;
+	margin-top: 5px ;
+	margin-bottom: 35px ;
+    height: 5px;
+    color: #bcbbbb;
+    background-color: #bcbbbb ;
+}
+.main-image {
+	width: 1140px ;
+	height: 350px ;
+}
+.portfolio-image,
+.resume-image,
+.frogger-image,
+.websiteoptim-image
+{
+	width: 350px ;
+	height: 210px ;
+}
+
+.portfolio-image-lg,
+.resume-image-lg,
+.frogger-image-lg,
+.websiteoptim-image-lg
+{
+	width: 550px ;
+	height: 300px ;
+}
+.link-property,
+.link-property:visited,
+.link-property:hover,
+.link-property:active
+{
+	color: #bcbbbb;
+    text-decoration: none ;
+}
+/*a,
+a:visited,
+a:hover,
+a:active
+{
+	color: #bcbbbb;
+    text-decoration: none ;
+}*/

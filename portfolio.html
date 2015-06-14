@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Meta declarations  -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- stylesheet and javascript links -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400'
+          rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="bootstrap-3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <title>Portfolio</title>
+</head>
+
+<body class="container">
+
+    <!-- Document Header: Logo, Name and Description -->
+    <div class="row header-row">
+        <div class="col-md-6">
+            <img class="img-responsive udacity-logo" src="images/udacity_logo.jpeg" alt="Udacity Logo">
+        </div>
+        <div class="col-md-6 text-right text-uppercase">
+            <h1 class="title-super text-thin">Jane Doette</h1>
+            <h3 class="title-summary">Front-end Ninja</h3>
+        </div>
+    </div>
+
+    <!-- Horizontal line below Document Header -->
+    <div class="row">
+        <div class="col-md-12">
+            <hr>
+        </div>
+    </div>
+
+    <!-- Document's main image (1440x350) -->
+    <div class="row">
+        <div class="col-md-12">
+            <img class="img-responsive main-image" src="images/html_code.png"
+                alt="Main image. Image of html code.">
+        </div>
+    </div>
+
+    <!-- Header for the project section of the document -->
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="project-header text-muted">Featured Work</h2>
+        </div>
+    </div>
+
+    <!-- The following row holds 3 columns, one project in each -->
+    <div class="row text-center">
+        <!-- Project 1, portfolio project. Click on the image to see -->
+        <!-- more information about the project in modal form -->
+        <div class="col-md-4" >
+            <img class="img-responsive portfolio-image"
+                 style="cursor:pointer" data-toggle="modal" data-target="#project1"
+                 src="images/portfolio.jpg" alt="A picture of a portfolio.">
+            <h3 class="text-uppercase project-caption">Portfolio</h3>
+            <a class="link-property" style="cursor:pointer"
+               data-toggle="modal" data-target="#project1">Portfolio Details</a>
+        </div>
+
+        <!-- Project 2, online resume. Click to see more info -->
+        <div class="col-md-4">
+            <img class="img-responsive resume-image"
+                 style="cursor:pointer" data-toggle="modal" data-target="#project2"
+                 src="images/resume1.png" alt="A picture of a resume.">
+            <h3 class="text-uppercase project-caption">Online Resume</h3>
+            <a class="link-property" style="cursor:pointer"
+               data-toggle="modal" data-target="#project2">Online Resume</a>
+        </div>
+
+        <!-- Project 3, Clone of classic arcade game Frogger.  -->
+        <!-- Click to see more info -->
+        <div class="col-md-4">
+            <img class="img-responsive frogger-image"
+                 style="cursor:pointer" data-toggle="modal" data-target="#project3"
+                 src="images/frogger.png" alt="A picture of the old arcade game, Frogger">
+            <h3 class="text-uppercase project-caption">Game: Frogger</h3>
+            <a class="link-property" style="cursor:pointer"
+               data-toggle="modal" data-target="#project3">Game Details</a>
+        </div>
+    </div> <!-- row end -->
+
+    <div class="row text-center">
+
+        <!-- Project 4, Clone of classic arcade game Frogger.  -->
+        <!-- Click to see morec info -->
+        <div class="col-md-4">
+            <img class="img-responsive websiteoptim-image"
+                 style="cursor:pointer" data-toggle="modal" data-target="#project1"
+                 src="images/websiteoptim.png"
+                 alt="A picture saying web optimization">
+            <h3 class="text-uppercase project-caption">Website Optimization</h3>
+            <a class="link-property" style="cursor:pointer"
+               data-toggle="modal" data-target="#project4">Web Optimization Details</a>
+        </div>
+
+    </div> <!-- row end -->
+
+    <!-- Modal for Project 1 (portfolio) -->
+    <div class="modal fade" id="project1" tabindex="-1" role="dialog"
+        aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="myModalLabel">Showcase Portfolio Project</h3>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive portfolio-image-lg"
+                         src="images/portfolio.jpg"
+                         alt="A picture of a portfolio">
+                    <h4>Description</h4>
+                    I was provided with a design mockup as a PDF-file and had to replicate that design in HTML and CSS. I developed a responsive website that will display images, descriptions and links to each of the portfolio projects that I will complete throughout the course of the Front-End Web Developer Nanodegree program.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Project 2 (online resume) -->
+    <div class="modal fade" id="project2" tabindex="-1" role="dialog"
+        aria-labelledby="myModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="myModalLabel1">Online Resume</h3>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive resume-image-lg"
+                         src="images/resume1.png"
+                         alt="A picture of a resume">
+                    <h4>Description</h4>
+                    In this project I built an online version of my resume. I demonstrate mastery of the language's syntax through a series of challenges. Each multipart problem mimics a real-life challenge that front-end developers face. I was required to write clean code and to apply my knowledge of variables, objects, JSON, functions and control flow to successfully solve the challenges.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Project 3 (clone of classic arcade game frogger) -->
+    <div class="modal fade" id="project3" tabindex="-1" role="dialog"
+        aria-labelledby="myModalLabel2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="myModalLabel2">Online Resume</h3>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive frogger-image-lg"
+                         src="images/frogger.png"
+                         alt="A picture of the old arcade game, Frogger">
+                    <h4>Description</h4>
+                    In this project I built an online game similar to the classic arcade game frogger. I was provided with visual assets and a game loop engine; using these tools I added a number of entities to the game including the player characters and enemies to recreate the classic game.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!-- Modal for Project 4 (website optimization) -->
+    <div class="modal fade" id="project4" tabindex="-1" role="dialog"
+        aria-labelledby="myModalLabel3" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="myModalLabel3">Online Resume</h3>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive websiteoptim-image-lg"
+                         src="images/websiteoptim.png"
+                         alt="A picture saying web optimization">
+                    <h4>Description</h4>
+                    I optimized a provided website with a number of optimization- and performance-related issues so that it achieved a target PageSpeed score and runs at 60 frames per second.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
