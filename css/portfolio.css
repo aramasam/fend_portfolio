@@ -1,27 +1,44 @@
-/** {
-	border: 1px dotted navy ;
-}
-*/
+
+/* CSS validated using https://jigsaw.w3.org/css-validator/#validate_by_input */
+/* Followed udacity style guide: http://udacity.github.io/frontend-nanodegree-styleguide */
 
 body {
-	font-family: 'Lato', sans-serif;
-	color: #747704;
-	font-weight: 300;
+	font: 300 14px "Lato", sans-serif;
+
+	color: #747704 ;
 }
+
 .title-super {
 	font-size: 60px;
 }
 .title-summary {
 	margin-top: 10px;
 }
-.udacity-logo {
-	width: 140px ;
-	height: 140px ;
-	margin-top: 10px;
-	margin-bottom: 5px ;
-}
+
 .header-row {
 	margin-top: 20px;
+}
+
+.project-header {
+	font: 300 36px "Lato", sans-serif;
+
+	letter-spacing: 2px ;
+}
+hr {
+    border: 0;
+
+	padding: 0;
+
+	margin: 5px 0 35px 0 ;
+
+    height: 5px;
+
+    color: #bcbbbb;
+
+    background-color: #bcbbbb ;
+}
+.inner-row-spacing {
+	margin-bottom: 20px ;
 }
 .text-muted {
 	color: #bcbbbb;
@@ -30,25 +47,21 @@ body {
 	font-weight: 100 ;
 }
 .project-caption {
-	font-size: 36px;
-	font-weight: 300;
+	font: 300 36px "Lato", sans-serif;
 }
-.project-header {
-	font-size: 36px;
-	letter-spacing: 2px ;
-	font-weight: 300;
-}
-hr {
-    border: 0;
-	padding: 0;
-	margin-top: 5px ;
-	margin-bottom: 35px ;
-    height: 5px;
-    color: #bcbbbb;
-    background-color: #bcbbbb ;
+
+/* Image Properties */
+
+.udacity-logo {
+	width: 140px ;
+
+	height: 140px ;
+
+    margin: 10px 0 5px 0;
 }
 .main-image {
 	width: 1140px ;
+
 	height: 350px ;
 }
 .portfolio-image,
@@ -56,9 +69,9 @@ hr {
 .frogger-image,
 .websiteoptim-image,
 .neighborhood-image,
-.tdd-image
-{
+.tdd-image{
 	width: 350px ;
+
 	height: 210px ;
 }
 
@@ -67,24 +80,20 @@ hr {
 .frogger-image-lg,
 .websiteoptim-image-lg,
 .neighborhood-image-lg,
-.tdd-image-lg
-{
+.tdd-image-lg {
 	width: 550px ;
+
 	height: 300px ;
 }
 .link-property,
+.link-property:link,
 .link-property:visited,
 .link-property:hover,
-.link-property:active
-{
+.link-property:active {
 	color: #bcbbbb;
+
     text-decoration: none ;
+
+    cursor: pointer ;
 }
-/*a,
-a:visited,
-a:hover,
-a:active
-{
-	color: #bcbbbb;
-    text-decoration: none ;
-}*/
+

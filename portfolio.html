@@ -6,8 +6,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- stylesheet and javascript links -->
-    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400'
-          rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400"
+          rel="stylesheet">
     <link rel="stylesheet" href="bootstrap-3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/portfolio.css">
     <script src="js/jquery-1.11.3.min.js"></script>
@@ -15,9 +15,13 @@
     <title>Portfolio</title>
 </head>
 
-<!-- INFO TO REVIEWERS -->
+<!-- INFO TO REVIEWERS :
 
-<!-- In the Featured Work section, clicking on the image or the link below the caption will bring down (open up) a Modal. I used Modal for this project. When I complete the other projects I will open those websites instead of Modal.
+HTML validated by: https://validator.w3.org/#validate_by_input
+CSS validated using https://jigsaw.w3.org/css-validator/#validate_by_input
+Followed Udacity style guide.
+
+I have used HTML5 semantic tags: header, section, article, figure and footer. Document is separated into header, content section and footer. The content section contains 6 articles. Each article is for a project. Each article contains two sections. The first section is what is visible on the site. The second is the Bootstrap Modal that comes down when you click on the first section's image or link. The modal is again divided into header, content and footer
 
 Udacity Logo: I googled and got one.
 
@@ -32,7 +36,9 @@ Bootstrap: I have used Bootstrap and my personal style sheet for styling.
     <header>
         <div class="row header-row">
             <div class="col-md-3">
+                <figure>
                 <img class="img-responsive udacity-logo" src="images/udacity_logo.jpeg" alt="Udacity Logo">
+                </figure>
             </div>
             <div class="col-md-9 text-right text-uppercase">
                 <h1 class="title-super text-thin">Ananth Ramasamy</h1>
@@ -54,8 +60,10 @@ Bootstrap: I have used Bootstrap and my personal style sheet for styling.
     <article>
         <div class="row">
             <div class="col-md-12">
+                <figure>
                 <img class="img-responsive main-image" src="images/html_code.png"
                     alt="Main image. Image of html code.">
+                </figure>
             </div>
         </div>
     </article>
@@ -71,219 +79,319 @@ Bootstrap: I have used Bootstrap and my personal style sheet for styling.
     </header>
 
     <!-- The following row holds 3 columns, one project in each -->
-    <div class="row text-center inner-row-spacing">
+    <div class="row inner-row-spacing">
         <!-- Project 1, portfolio project. Click on the image to see -->
         <!-- more information about the project in modal form -->
         <article>
-            <div class="col-md-4" >
-                <img class="img-responsive portfolio-image"
-                     style="cursor:pointer" data-toggle="modal" data-target="#project1"
-                     src="images/portfolio.jpg" alt="A picture of a portfolio.">
-                <h3 class="text-uppercase project-caption">Portfolio</h3>
-                <a class="link-property" style="cursor:pointer"
-                   data-toggle="modal" data-target="#project1">Portfolio Details</a>
-            </div>
-             <div class="modal fade" id="project1" tabindex="-1" role="dialog"
-                aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h3 class="modal-title" id="myModalLabel">Showcase Portfolio Project</h3>
-                        </div>
-                        <div class="modal-body">
-                            <img class="img-responsive portfolio-image-lg"
-                                 src="images/portfolio.jpg"
-                                 alt="A picture of a portfolio">
-                            <h4>Description</h4>
-                            I was provided with a design mockup as a PDF-file and had to replicate that design in HTML and CSS. I developed a responsive website that will display images, descriptions and links to each of the portfolio projects that I will complete throughout the course of the Front-End Web Developer Nanodegree program.
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <section>
+                <div class="col-md-4 text-center" >
+                    <figure>
+                    <img class="img-responsive portfolio-image"
+                         style="cursor:pointer" data-toggle="modal" data-target="#project1"
+                         src="images/portfolio.jpg" alt="A picture of a portfolio.">
+                     </figure>
+                    <h3 class="text-uppercase project-caption">Portfolio</h3>
+                    <a class="link-property"
+                       data-toggle="modal" data-target="#project1">Portfolio Details</a>
+                </div>
+            </section>
+            <section>
+                 <div class="modal fade" id="project1" tabindex="-1" role="dialog"
+                    aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <header>
+                                <div class="modal-header">
+                                    <h3 class="modal-title" id="myModalLabel">Showcase Portfolio Project</h3>
+                                </div>
+                            </header>
+
+                            <div class="modal-body">
+                                <figure>
+                                <img class="img-responsive portfolio-image-lg"
+                                     src="images/portfolio.jpg"
+                                     alt="A picture of a portfolio">
+                                 </figure>
+                                <h4>Description</h4>
+                                <p>I was provided with a design mockup as a PDF-file and had to replicate that design in HTML and CSS. I developed a responsive website that will display images, descriptions and links to each of the portfolio projects that I will complete throughout the course of the Front-End Web Developer Nanodegree program. </p>
+                            </div>
+                            <footer>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </footer>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </article>
 
         <!-- Project 2, online resume. Click to see more info -->
         <article>
-            <div class="col-md-4">
+            <section>
+            <div class="col-md-4 text-center">
+                <figure>
                 <img class="img-responsive resume-image"
                      style="cursor:pointer" data-toggle="modal" data-target="#project2"
                      src="images/resume1.png" alt="A picture of a resume.">
+                 </figure>
                 <h3 class="text-uppercase project-caption">Online Resume</h3>
-                <a class="link-property" style="cursor:pointer"
+                <a class="link-property"
                    data-toggle="modal" data-target="#project2">Online Resume</a>
             </div>
+            </section>
 
             <!-- Modal for Project 2 (online resume) -->
+            <section>
             <div class="modal fade" id="project2" tabindex="-1" role="dialog"
                 aria-labelledby="myModalLabel1" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
+
+                        <header>
                         <div class="modal-header">
                             <h3 class="modal-title" id="myModalLabel1">Online Resume</h3>
                         </div>
+                        </header>
+
                         <div class="modal-body">
+                            <figure>
                             <img class="img-responsive resume-image-lg"
                                  src="images/resume1.png"
                                  alt="A picture of a resume">
+                             </figure>
                             <h4>Description</h4>
-                            In this project I built an online version of my resume. I demonstrate mastery of the language's syntax through a series of challenges. Each multipart problem mimics a real-life challenge that front-end developers face. I was required to write clean code and to apply my knowledge of variables, objects, JSON, functions and control flow to successfully solve the challenges.
+                            <p>In this project I built an online version of my resume. I demonstrate mastery of the language's syntax through a series of challenges. Each multipart problem mimics a real-life challenge that front-end developers face. I was required to write clean code and to apply my knowledge of variables, objects, JSON, functions and control flow to successfully solve the challenges.</p>
                         </div>
+
+                        <footer>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                         </div>
+                        </footer>
                     </div>
                 </div>
             </div>
+            </section>
         </article>
 
         <!-- Project 3, Clone of classic arcade game Frogger.  -->
         <!-- Click to see more info -->
         <article>
-            <div class="col-md-4">
+            <section>
+            <div class="col-md-4 text-center">
+                <figure>
                 <img class="img-responsive frogger-image"
                      style="cursor:pointer" data-toggle="modal" data-target="#project3"
                      src="images/frogger.png" alt="A picture of the old arcade game, Frogger">
+                 </figure>
                 <h3 class="text-uppercase project-caption">Game: Frogger</h3>
-                <a class="link-property" style="cursor:pointer"
+                <a class="link-property"
                    data-toggle="modal" data-target="#project3">Game Details</a>
             </div>
+            </section>
                 <!-- Modal for Project 3 (clone of classic arcade game frogger) -->
+            <section>
             <div class="modal fade" id="project3" tabindex="-1" role="dialog"
                 aria-labelledby="myModalLabel2" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
+                        <header>
                         <div class="modal-header">
                             <h3 class="modal-title" id="myModalLabel2">Game: Clone of Frogger</h3>
                         </div>
+                        </header>
+
                         <div class="modal-body">
+                            <figure>
                             <img class="img-responsive frogger-image-lg"
                                  src="images/frogger.png"
                                  alt="A picture of the old arcade game, Frogger">
+                             </figure>
                             <h4>Description</h4>
-                            In this project I built an online game similar to the classic arcade game Frogger. I was provided with visual assets and a game loop engine; using these tools I added a number of entities to the game including the player characters and enemies to recreate the classic game.
+                            <p>In this project I built an online game similar to the classic arcade game Frogger. I was provided with visual assets and a game loop engine; using these tools I added a number of entities to the game including the player characters and enemies to recreate the classic game.</p>
                         </div>
+
+                        <footer>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                         </div>
+                        </footer>
+
                     </div>
                 </div>
             </div>
+            </section>
         </article>
     </div> <!-- row end -->
 
-    <div class="row text-center inner-row-spacing">
+    <div class="row inner-row-spacing">
 
         <!-- Project 4, Clone of classic arcade game Frogger.  -->
         <!-- Click to see morec info -->
         <article>
-            <div class="col-md-4">
+            <section>
+            <div class="col-md-4 text-center">
+                <figure>
                 <img class="img-responsive websiteoptim-image"
                      style="cursor:pointer" data-toggle="modal" data-target="#project4"
                      src="images/websiteoptim.png"
                      alt="A picture saying web optimization">
+                 </figure>
                 <h3 class="text-uppercase project-caption">Website Optimization</h3>
-                <a class="link-property" style="cursor:pointer"
+                <a class="link-property"
                    data-toggle="modal" data-target="#project4">Web Optimization Details</a>
             </div>
+            </section>
             <!-- Modal for Project 4 (website optimization) -->
+            <section>
             <div class="modal fade" id="project4" tabindex="-1" role="dialog"
                 aria-labelledby="myModalLabel3" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
+
+                        <header>
                         <div class="modal-header">
                             <h3 class="modal-title" id="myModalLabel3">Website Optimization</h3>
                         </div>
+                        </header>
+
                         <div class="modal-body">
+                            <figure>
                             <img class="img-responsive websiteoptim-image-lg"
                                  src="images/websiteoptim.png"
                                  alt="A picture saying web optimization">
+                             </figure>
                             <h4>Description</h4>
-                            I optimized a provided website with a number of optimization- and performance-related issues so that it achieved a target PageSpeed score and runs at 60 frames per second.
+                            <p>I optimized a provided website with a number of optimization- and performance-related issues so that it achieved a target PageSpeed score and runs at 60 frames per second.</p>
                         </div>
+
+                        <footer>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                         </div>
+                        </footer>
+
                     </div>
                 </div>
             </div>
+            </section>
         </article>
 
         <!-- Project 5, Neighborhood map  -->
         <!-- Click to see morec info -->
         <article>
-            <div class="col-md-4">
+            <section>
+            <div class="col-md-4 text-center">
+                <figure>
                 <img class="img-responsive neighborhood-image"
                      style="cursor:pointer" data-toggle="modal" data-target="#project5"
                      src="images/neighborhood2.gif"
                      alt="A picture of a neighborhood">
+                 </figure>
                 <h3 class="text-uppercase project-caption">Neighborhood Map</h3>
-                <a class="link-property" style="cursor:pointer"
+                <a class="link-property"
                    data-toggle="modal" data-target="#project5">Neighborhood Map</a>
             </div>
+            </section>
             <!-- Modal for Project 5 (Neighborhood Map) -->
+            <section>
             <div class="modal fade" id="project5" tabindex="-1" role="dialog"
                 aria-labelledby="myModalLabel4" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
+                        <header>
                         <div class="modal-header">
                             <h3 class="modal-title" id="myModalLabel4">Neighborhood Map</h3>
                         </div>
+                        </header>
+
                         <div class="modal-body">
+                            <figure>
                             <img class="img-responsive neighborhood-image-lg"
                                  src="images/neighborhood2.gif"
                                  alt="A picture showing a neighborhood">
+                             </figure>
                             <h4>Description</h4>
-                            I developed a single-page application featuring a map of my neighborhood. I then added additional functionality to this application, including: map markers to identify popular locations or places you’d like to visit, a search function to easily discover these locations, and a listview to support simple browsing of all locations. I then researched and implement third-party APIs that provide additional information about each of these locations (such as StreetView images, Wikipedia articles, Yelp reviews, etc).
+                            <p>I developed a single-page application featuring a map of my neighborhood. I then added additional functionality to this application, including: map markers to identify popular locations or places you’d like to visit, a search function to easily discover these locations, and a listview to support simple browsing of all locations. I then researched and implement third-party APIs that provide additional information about each of these locations (such as StreetView images, Wikipedia articles, Yelp reviews, etc).</p>
                         </div>
+
+                        <footer>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                         </div>
+                        </footer>
+
                     </div>
                 </div>
             </div>
+            </section>
         </article>
 
         <!-- Project 6, Test Driven Development  -->
         <!-- Click to see morec info -->
         <article>
-            <div class="col-md-4">
+            <section>
+            <div class="col-md-4 text-center">
+                <figure>
                 <img class="img-responsive tdd-image"
                      style="cursor:pointer" data-toggle="modal" data-target="#project6"
                      src="images/tdd.png"
                      alt="A picture showing Test Driven Development">
+                 </figure>
                 <h3 class="text-uppercase project-caption">Test Driven Development</h3>
-                <a class="link-property" style="cursor:pointer"
+                <a class="link-property"
                    data-toggle="modal" data-target="#project6">Test Driven Development</a>
             </div>
+            </section>
+
             <!-- Modal for Project 6 (Test Driven Development) -->
+            <section>
             <div class="modal fade" id="project6" tabindex="-1" role="dialog"
                 aria-labelledby="myModalLabel5" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
+                        <header>
                         <div class="modal-header">
                             <h3 class="modal-title" id="myModalLabel5">Test Driven Development</h3>
                         </div>
+                        </header>
+
                         <div class="modal-body">
+                            <figure>
                             <img class="img-responsive tdd-image-lg"
                                  src="images/tdd.png"
                                  alt="A picture Test Driven Development">
+                             </figure>
                             <h4>Description</h4>
-                            In this project, I learnt about testing with Javascript. Testing is an important part of the development process and many organizations practice a standard known as "Test-Driven Development" or TDD. This is when developers write tests first, before they ever start developing their application.
-                            Whether you work in an organization that writes tests extensively to inform product development or one that uses tests to encourage iteration, testing has become an essential skill in modern web development!
+                            <p>In this project, I learnt about testing with Javascript. Testing is an important part of the development process and many organizations practice a standard known as "Test-Driven Development" or TDD. This is when developers write tests first, before they ever start developing their application.
+                            Whether you work in an organization that writes tests extensively to inform product development or one that uses tests to encourage iteration, testing has become an essential skill in modern web development!</p>
                         </div>
+
+                        <footer>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                         </div>
+                        </footer>
+
                     </div>
                 </div>
             </div>
+            </section>
         </article>
     </div> <!-- row end -->
 
     </section>
+
+    <footer id="#sitefooter">
+        <div class="row col-md-12 text-center text-muted">
+            <p> Copyright 2015:
+                <a href="#sitefooter" class="link-property">About</a>
+                |
+                <a href="#sitefooter" class="link-property">Contact</a>
+            </p>
+        </div>
+    </footer>
 </body>
 
 </html>
